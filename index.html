@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!--Hamburger div-->
+    <div class="hamburger-div">
+      <img id="ham-icon" src="img/hamb.png" alt="Hamburger icon" width="30" />
+    </div>
+    <!--Settings div-->
+    <div id="settings-div" style="display: none">
+      <p>Enter your settings below:</p>
+      <p>Your Name:<input id="name-in" type="text" /></p>
+      <p>Today's Focus:<input size="40" id="focus-in" type="text" /></p>
+      <p>
+        Background:
+        <select id="background-select">
+          <option id="sun" value="sunset">Sunset</option>
+          <option id="rocky-beach" value="beach">Rocky Beach</option>
+          <option id="star" value="starrysky">Starry Sky</option>
+        </select>
+      </p>
+      <p>
+        <button id="quote-btn">Random Quote</button>
+        <button id="btn">Save Settings</button>
+      </p>
+    </div>
+    <!--Display div-->
+    <div class="display-div">
+      <h1>
+        Hello
+        <span id="name-out"></span>
+        !
+      </h1>
+      <div></div>
+      <p class="focus">Today's Focus:</p>
+      <h2 id="focus-out"></h2>
+      <hr />
+      <p id="quote-out"></p>
+    </div>
+  </body>
+</html>
